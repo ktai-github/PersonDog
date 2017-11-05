@@ -39,9 +39,10 @@ int main(int argc, const char * argv[]) {
     [dogs addObject:oneDog];
     [dogs addObject:anotherDog];
     [onePerson set_pets:dogs];
+//    NSLog(@"%hu", (unsigned short)dogs.count);
     
     //return the names of both dogs in its array
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < dogs.count; i++) {
       Dog *indexDog = (Dog *)[dogs objectAtIndex: i];
       NSLog(@"%@", indexDog._name);
     }
