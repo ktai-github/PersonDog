@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Dog : NSObject
-@property NSString *_name;
+@property NSString *name;
 
 - (void) speak;
 @end

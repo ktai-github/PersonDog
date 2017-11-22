@@ -11,8 +11,11 @@
 
 @interface Person : NSObject
 
-@property NSString *_name;
-@property Dog *_pet;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) Dog *pet;
 @property NSMutableArray *_pets;
+@property (readonly) NSDate *dateOfBirth;
+-(instancetype)initWithDob;
+
 
 @end
